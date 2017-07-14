@@ -32,8 +32,8 @@ public class MailSender {
 		String to = "shyoun@winpac.co.kr";
 		String from = "smartworks";
 		String message = "스마트웍스닷넷에서 발송하는 test mail 입니다.";*/
-		
 		//String mailServerName = "smtp.worksmobile.com";
+		
 		String mailServerName = "smtp.works.naver.com";
 		String mailServerPort = "465";
 		String id = "@smartworks.net";
