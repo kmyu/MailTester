@@ -20,60 +20,20 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeUtility;
 
-public class MailSender {
+public class MailSender_smartworks {
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
+		mailSend("kmyu@smartworks.net","hello km");
+	}*/
+	
+	public static void mailSend(String to, String message) {
 		
-		/*String mailServerName = "193.169.13.30";
-		String mailServerPort = "25";
-		String id = "smartworks";
-		String pass = "IlrXnscg";
-		String subject = "Test Mail For Smartworks2";
-		String to = "shyoun@winpac.co.kr";
-		String from = "smartworks";
-		String message = "스마트웍스닷넷에서 발송하는 test mail 입니다.";*/
-		//String mailServerName = "smtp.worksmobile.com";
-		
-		String mailServerName = "smtp.works.naver.com";
+		String mailServerName = "smtp.worksmobile.com";
 		String mailServerPort = "465";
-		String id = "@smartworks.net";
+		String id = "info@smartworks.net";
 		String pass = "";
 		String subject = "test mail for smartworks";
-		String to = "@naver.com";
-		String from = "smartworks";
-		String message = "스마트웍스닷넷에서 발송하는 test mail 입니다.";
-		
-		/*if (args != null && args.length != 0) {
-
-			mailServerName = (String)args[0];
-			mailServerPort = (String)args[1];
-			id = (String)args[2];
-			pass = (String)args[3];
-			subject = (String)args[4];
-			to = (String)args[5];
-			from = (String)args[6];
-			message = (String)args[7];
-		} else {
-			
-			Scanner sc = new Scanner(System.in);
-			
-			System.out.print("Enter mailServerName :");
-			mailServerName = sc.nextLine();
-			System.out.print("Enter mailServerPort :");
-			mailServerPort = sc.nextLine();
-			System.out.print("Enter id :");
-			id = sc.nextLine();
-			System.out.print("Enter pass :");
-			pass = sc.nextLine();
-			System.out.print("Enter subject :");
-			subject = sc.nextLine();
-			System.out.print("Enter to :");
-			to = sc.nextLine();
-			System.out.print("Enter from :");
-			from = sc.nextLine();
-			System.out.print("Enter message :");
-			message = sc.nextLine();
-		}*/
+		String from = "info@smartworks.co.kr";
 		
 		try {
 			sendMail(mailServerName, mailServerPort, id, pass, subject, to, from, message);
